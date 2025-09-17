@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assignment 4 – Layout 1 (Grid)</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="container l1" role="main" aria-label="Layout 1">
+    <header class="box header">Header</header>
+    <nav class="box nav muted">Navigation</nav>
+    <section class="box main">
+      <div>
+        <h1>Main Content</h1>
+        <p>Grey boxes &amp; placeholder text. Aim for proportions similar to screenshot.</p>
+        <hr>
+        <div class="box muted" style="min-height:160px">Article / Feature</div>
+        <div style="height:12px"></div>
+        <div class="box muted" style="min-height:120px">Secondary Block</div>
+      </div>
+    </section>
+    <aside class="box side">
+      <div style="width:100%">
+        <div class="box" style="min-height:120px">Sidebar Widget</div>
+        <div style="height:12px"></div>
+        <div class="box" style="min-height:120px">Sidebar Widget</div>
+        <div style="height:12px"></div>
+        <div class="box" style="min-height:80px">Ad / Promo</div>
+      </div>
+    </aside>
+    <footer class="box footer">Footer</footer>
+  </div>
+  <div class="caption">Layout 1 – 960px wide and centered. Built with CSS Grid.</div>
+</div>
+</body>
+</html>
