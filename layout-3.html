@@ -11,7 +11,7 @@
         <!-- Header -->
         <header class="header">
           <div class="logo">Company Logo</div>
-          <nav class="nav" aria-label="Main navigation">
+          <nav class="nav">
             <div class="item">Item 1</div>
             <div class="item">Item 2</div>
             <div class="item">Item 3</div>
@@ -19,39 +19,36 @@
           </nav>
         </header>
 
-        <!-- Layout 3 grid:
-           - left: tall sidebar (navigation / list)
-           - right: main area with a large hero box and below it a 2x2 grid of boxes -->
-        <section class="layout3-grid" aria-label="Layout 3 main">
-          <!-- Sidebar -->
-          <aside class="sidebar" aria-label="Sidebar">
-            <div class="sidebar-head">Sidebar</div>
-            <ul class="sidebar-list">
-              <li>Navigation A</li>
-              <li>Navigation B</li>
-              <li>Navigation C</li>
-              <li>Navigation D</li>
-              <li>Navigation E</li>
-            </ul>
-            <div class="sidebar-box">Small promo box</div>
-          </aside>
+        <!-- Hero Section -->
+        <section class="hero">
+          <h1>
+            Lorem ipsum dolor sit amet, ne saepe phaedrum cotidieque has, natum
+            zril pro.
+          </h1>
+          <p class="lead">
+            Cu vel aliquid lobortis deseruisse. Nam at adipisci dignissim
+            forensibus. Qui an recteque maluisset assentior, cu ferri aperiam
+            imperdiet sed.
+          </p>
+        </section>
 
-          <!-- Main content -->
-          <div class="main-area">
-            <div class="main-hero">
-              <h2 class="hero-title">Feature Headline</h2>
-              <p class="hero-sub">
-                Short subheading that sits under the headline and above the big
-                image box.
-              </p>
-              <div class="hero-box" aria-hidden="true"></div>
-            </div>
+        <!-- Main Grid: Left (blog posts) + Right (featured products) -->
+        <section class="layout3-main">
+          <!-- Left column -->
+          <div class="left-col">
+            <div class="title">Title</div>
+            <div class="blog-post">Blog Post 1</div>
+            <div class="blog-post">Blog Post 2</div>
+          </div>
 
-            <div class="main-grid">
-              <div class="main-card"></div>
-              <div class="main-card"></div>
-              <div class="main-card"></div>
-              <div class="main-card"></div>
+          <!-- Right column -->
+          <div class="right-col">
+            <div class="title">Title</div>
+            <div class="featured-grid">
+              <div class="featured">Featured Product 1</div>
+              <div class="featured">Featured Product 2</div>
+              <div class="featured">Featured Product 3</div>
+              <div class="featured">Featured Product 4</div>
             </div>
           </div>
         </section>
