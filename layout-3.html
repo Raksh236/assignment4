@@ -1,26 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Assignment 4 – Layout 3 (Grid)</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="wrapper">
-  <div class="container l3" role="main" aria-label="Layout 3">
-    <header class="box header">Header</header>
-    <div class="box hero">Hero Area</div>
-    <div class="box a">Block A</div>
-    <div class="box b muted">Block B</div>
-    <div class="box c">Block C</div>
-    <div class="box d">Block D (spans two columns)</div>
-    <div class="box e muted">Block E</div>
-    <div class="box f muted">Block F</div>
-    <div class="box g">Block G (spans two columns)</div>
-    <footer class="box footer">Footer</footer>
-  </div>
-  <div class="caption">Layout 3 – Asymmetric magazine-style grid with multiple spanning areas.</div>
-</div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Layout 3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <main class="container">
+        <header class="header">
+          <div class="logo">Company Logo</div>
+          <nav class="nav">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+          </nav>
+        </header>
+
+        <section class="layout3-grid">
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="sidebar-logo">Company Logo</div>
+            <ul class="sidebar-links">
+              <li class="side-item">Link A</li>
+              <li class="side-item">Link B</li>
+              <li class="side-item">Link C</li>
+              <li class="side-item">Link D</li>
+            </ul>
+          </aside>
+
+          <!-- Main content -->
+          <div class="main-area">
+            <div class="main-hero">
+              <div class="hero-label">Featured</div>
+              <div class="hero-box"></div>
+            </div>
+
+            <div class="main-cards">
+              <div class="main-card"></div>
+              <div class="main-card"></div>
+              <div class="main-card"></div>
+              <div class="main-card"></div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">Copyright Notice</footer>
+      </main>
+    </div>
+  </body>
 </html>

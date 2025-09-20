@@ -2,33 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Assignment 4 – CSS Grid</title>
-    <style>
-      body {
-        font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-        line-height: 1.5;
-        margin: 40px;
-        max-width: 720px;
-      }
-      a {
-        display: block;
-        margin: 12px 0;
-        font-size: 18px;
-      }
-      h1 {
-        margin-bottom: 8px;
-      }
-      p {
-        color: #555;
-      }
-    </style>
+    <title>Assignment 4 - CSS Grid Layouts</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Assignment 4 – CSS Grid</h1>
-    <p>Select a layout:</p>
-    <a href="layout-1.html">Layout 1</a>
-    <a href="layout-2.html">Layout 2</a>
-    <a href="layout-3.html">Layout 3</a>
+    <div class="page">
+      <main class="container">
+        <h1 class="page-title">Assignment 4 — CSS Grid Layouts</h1>
+
+        <p class="intro">
+          Three layouts recreated with CSS Grid. Click to view each layout.
+        </p>
+
+        <ul class="layout-links">
+          <li>
+            <a href="layout-1.html"
+              >Layout 1 — Featured product + two products</a
+            >
+          </li>
+          <li>
+            <a href="layout-2.html">Layout 2 — Hero headline + 3×3 gallery</a>
+          </li>
+          <li><a href="layout-3.html">Layout 3 — Sidebar + feature area</a></li>
+        </ul>
+
+        <p class="note">
+          All pages use <code>styles.css</code>. Width: 960px, centered.
+        </p>
+      </main>
+    </div>
   </body>
 </html>
