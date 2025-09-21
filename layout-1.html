@@ -8,7 +8,7 @@
   <body class="layout1">
     <div class="page">
       <main class="container">
-        <!-- Header: logo left, nav bar right -->
+        <!-- Header: logo left, single gray nav bar right -->
         <header class="header header--l1">
           <div class="logo logo--l1">Company Logo</div>
           <nav class="nav nav--l1">
@@ -19,20 +19,24 @@
           </nav>
         </header>
 
-        <!-- Featured product image (full width with label inside box) -->
+        <!-- Featured product (label above the box) -->
         <section class="layout1-featured">
-          <div class="featured-box featured-box--l1">
-            Featured Product Image
+          <div class="box-label">Featured Product Image</div>
+          <div class="featured-box featured-box--l1"></div>
+        </section>
+
+        <!-- Two product boxes (labels above the boxes) -->
+        <section class="layout1-products layout1-products--l1">
+          <div class="product">
+            <div class="box-label">Product 1</div>
+            <div class="product-box product-box--l1"></div>
+          </div>
+          <div class="product">
+            <div class="box-label">Product 2</div>
+            <div class="product-box product-box--l1"></div>
           </div>
         </section>
 
-        <!-- Two product cards side-by-side with label inside -->
-        <section class="layout1-products layout1-products--l1">
-          <div class="product-box product-box--l1">Product 1</div>
-          <div class="product-box product-box--l1">Product 2</div>
-        </section>
-
-        <!-- Footer -->
         <footer class="footer footer--l1">Copyright Notice</footer>
       </main>
     </div>

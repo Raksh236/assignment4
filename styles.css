@@ -243,7 +243,7 @@ body {
   }
 }
 
-/* ===== Layout 1 exact-match tweaks ===== */
+/* ===== Layout 1 (professor-match) ===== */
 .layout1 .page {
   padding: 40px 0;
 }
@@ -257,8 +257,8 @@ body {
   display: grid;
   grid-template-columns: 240px 1fr;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 22px;
+  gap: 22px;
+  margin-bottom: 18px;
 }
 .logo--l1 {
   width: 240px;
@@ -266,31 +266,41 @@ body {
   background: #cfcfcf;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 10px;
   font-size: 13px;
   color: #000;
 }
+/* Single gray nav bar with inline items */
 .nav--l1 {
   height: 48px;
   background: #cfcfcf;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 0 18px;
+  gap: 0;
   font-size: 14px;
   font-weight: 500;
 }
-
-/* Featured image */
-.featured-box--l1 {
-  background: #cfcfcf;
-  height: 420px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
+/* neutralize any pill styling from global rules */
+.nav--l1 .item,
+.nav--l1 span {
+  background: none;
+  padding: 0;
 }
 
-/* Product grid */
+/* Labels ABOVE boxes */
+.box-label {
+  font-size: 12px;
+  color: #222;
+  margin: 6px 0 8px 0;
+}
+
+/* Featured/product boxes */
+.featured-box--l1 {
+  background: #cfcfcf;
+  height: 420px; /* tall like the screenshot */
+}
 .layout1-products--l1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -300,10 +310,6 @@ body {
 .product-box--l1 {
   background: #cfcfcf;
   height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
 }
 
 /* Footer */
