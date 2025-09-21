@@ -29,7 +29,7 @@ body {
 }
 
 /* ---------------------------
-   Global Header (default)
+   Default Header (if needed on index)
    --------------------------- */
 .header {
   display: grid;
@@ -59,7 +59,7 @@ body {
 }
 
 /* ---------------------------
-   Footer (default)
+   Default Footer
    --------------------------- */
 .footer {
   background: #dcdcdc;
@@ -111,44 +111,38 @@ body {
   width: 960px;
   margin: 0 auto;
 }
-
-/* Header: logo left, nav bar right */
 .header--l1 {
   display: grid;
   grid-template-columns: 240px 1fr;
-  align-items: start; /* keep both at top */
+  align-items: start;
   gap: 22px;
   margin-bottom: 18px;
 }
-/* Layout 1 logo */
 .logo--l1 {
   width: 240px;
   height: 72px;
   background: #cfcfcf;
-  display: block; /* no flex, just block */
-  padding: 6px 10px; /* top-left padding */
+  display: block;
+  padding: 6px 10px;
   font-size: 13px;
   color: #000;
 }
-
 .nav--l1 {
-  height: 36px; /* compact bar */
+  height: 36px;
   background: #cfcfcf;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  width: 620px; /* adjust width to match professor */
-  justify-self: end; /* push bar to right */
-  align-self: start; /* align with top */
+  width: 620px;
+  justify-self: end;
+  align-self: start;
 }
 .nav--l1 span {
   background: none;
   padding: 0;
   font-size: 13px;
 }
-
-/* Featured/product boxes with labels inside top-left */
 .featured-box--l1,
 .product-box--l1 {
   background: #cfcfcf;
@@ -168,16 +162,12 @@ body {
   font-weight: 500;
   color: #000;
 }
-
-/* Products grid */
 .layout1-products--l1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 22px;
   margin-top: 18px;
 }
-
-/* Footer */
 .footer--l1 {
   background: #dcdcdc;
   height: 40px;
@@ -202,13 +192,12 @@ body {
   gap: 22px;
   margin-bottom: 12px;
 }
-
 .logo--l2 {
   width: 240px;
   height: 48px;
   background: #cfcfcf;
-  display: block; /* no flex */
-  padding: 6px 10px; /* text in top-left */
+  display: block;
+  padding: 6px 10px;
   font-size: 13px;
   color: #000;
 }
@@ -219,7 +208,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
-  width: 430px; /* adjust to match screenshot */
+  width: 430px;
   justify-self: end;
   align-self: start;
 }
@@ -264,19 +253,79 @@ body {
 }
 
 /* ---------------------------
-   Layout 3
+   Layout 3 (professor match)
    --------------------------- */
+.layout3 .container {
+  width: 960px;
+  margin: 0 auto;
+}
+.header--l3 {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  align-items: start;
+  gap: 22px;
+  margin-bottom: 14px;
+}
+.logo--l3 {
+  width: 240px;
+  height: 48px;
+  background: #cfcfcf;
+  display: block;
+  padding: 6px 10px;
+  font-size: 13px;
+  color: #000;
+}
+.nav--l3 {
+  background: #cfcfcf;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  width: 430px;
+  justify-self: end;
+  align-self: start;
+}
+.nav--l3 span {
+  background: none;
+  padding: 0;
+  font-size: 13px;
+}
+.hero--l3 .hero-box {
+  background: #cfcfcf;
+  padding: 36px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.hero--l3 h1 {
+  font-size: 40px;
+  line-height: 1.06;
+  font-weight: 800;
+}
+.hero--l3 .lead {
+  font-weight: 700;
+  font-size: 15px;
+  max-width: 760px;
+  color: #222;
+}
 .layout3-main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
-.left-col .title {
+.title--bar {
   background: #cfcfcf;
-  padding: 6px 10px;
-  margin-bottom: 12px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 .blog-post {
   background: #cfcfcf;
@@ -285,12 +334,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.right-col .title {
-  background: #cfcfcf;
-  padding: 6px 10px;
-  margin-bottom: 12px;
-  font-weight: 600;
 }
 .featured-grid {
   display: grid;
@@ -303,6 +346,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.footer--l3 {
+  background: #dcdcdc;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 18px;
 }
 
 /* ---------------------------
