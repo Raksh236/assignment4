@@ -120,14 +120,17 @@ body {
   gap: 22px;
   margin-bottom: 18px;
 }
+/* Layout 1 logo */
 .logo--l1 {
   width: 240px;
   height: 72px;
   background: #cfcfcf;
-  padding: 8px 10px; /* top-left text */
+  display: block; /* no flex, just block */
+  padding: 6px 10px; /* top-left padding */
   font-size: 13px;
   color: #000;
 }
+
 .nav--l1 {
   height: 36px; /* compact bar */
   background: #cfcfcf;
@@ -199,11 +202,13 @@ body {
   gap: 22px;
   margin-bottom: 12px;
 }
+
 .logo--l2 {
   width: 240px;
   height: 48px;
   background: #cfcfcf;
-  padding: 6px 10px;
+  display: block; /* no flex */
+  padding: 6px 10px; /* text in top-left */
   font-size: 13px;
   color: #000;
 }
