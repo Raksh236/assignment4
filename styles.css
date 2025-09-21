@@ -29,7 +29,7 @@ body {
 }
 
 /* ---------------------------
-   Default Header (if needed on index)
+   Default Header (used on index)
    --------------------------- */
 .header {
   display: grid;
@@ -101,9 +101,9 @@ body {
   margin-top: 10px;
 }
 
-/* ---------------------------
+/* ===========================
    Layout 1 (professor match)
-   --------------------------- */
+   =========================== */
 .layout1 .page {
   padding: 40px 0;
 }
@@ -111,6 +111,8 @@ body {
   width: 960px;
   margin: 0 auto;
 }
+
+/* Header: logo left, compact nav bar right */
 .header--l1 {
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -122,27 +124,29 @@ body {
   width: 240px;
   height: 72px;
   background: #cfcfcf;
-  display: block;
+  display: block; /* text top-left inside box */
   padding: 6px 10px;
   font-size: 13px;
   color: #000;
 }
 .nav--l1 {
-  height: 36px;
+  height: 36px; /* compact bar */
   background: #cfcfcf;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  width: 620px;
-  justify-self: end;
-  align-self: start;
+  width: 620px; /* adjust if professor’s bar is shorter/longer */
+  justify-self: end; /* push to right */
+  align-self: start; /* stick to top */
 }
 .nav--l1 span {
   background: none;
   padding: 0;
   font-size: 13px;
 }
+
+/* Featured/product boxes with labels inside top-left */
 .featured-box--l1,
 .product-box--l1 {
   background: #cfcfcf;
@@ -178,13 +182,14 @@ body {
   margin-top: 22px;
 }
 
-/* ---------------------------
+/* ===========================
    Layout 2 (professor match)
-   --------------------------- */
+   =========================== */
 .layout2 .container {
   width: 960px;
   margin: 0 auto;
 }
+
 .header--l2 {
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -217,6 +222,7 @@ body {
   padding: 0;
   font-size: 13px;
 }
+
 .hero--l2 {
   margin-bottom: 22px;
 }
@@ -252,12 +258,9 @@ body {
   margin-top: 16px;
 }
 
-/* ---------------------------
+/* ===========================
    Layout 3 (professor match)
-   --------------------------- */
-./* ---------------------------
-   Layout 3 (professor match, adjusted)
-   --------------------------- */
+   =========================== */
 .layout3 .container {
   width: 960px;
   margin: 0 auto;
@@ -297,10 +300,10 @@ body {
   font-size: 13px;
 }
 
-/* Hero box: taller, with centered text */
+/* Hero: taller gray block with centered text */
 .hero--l3 .hero-box {
   background: #cfcfcf;
-  padding: 60px 40px; /* taller padding */
+  padding: 60px 40px; /* taller like professor */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,7 +312,7 @@ body {
   margin-bottom: 24px;
 }
 .hero--l3 h1 {
-  font-size: 42px; /* bigger font */
+  font-size: 42px;
   line-height: 1.08;
   font-weight: 800;
 }
@@ -320,7 +323,7 @@ body {
   color: #222;
 }
 
-/* Main grid: left 1fr, right 2fr */
+/* Main grid */
 .layout3-main {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -328,7 +331,7 @@ body {
   margin-bottom: 28px;
 }
 
-/* Title bars: slightly taller */
+/* Title bars */
 .title--bar {
   background: #cfcfcf;
   height: 36px;
@@ -338,18 +341,20 @@ body {
   font-weight: 600;
   margin-bottom: 14px;
 }
+/* If you ever want the right Title to match one product column exactly:
+   .right-col .title--bar { width: calc(50% - 9px); } */
 
-/* Left column: blog posts */
+/* Left column */
 .blog-post {
   background: #cfcfcf;
-  height: 160px; /* taller blog post boxes */
+  height: 160px; /* taller boxes */
   margin-bottom: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Right column: featured products */
+/* Right column */
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -357,7 +362,7 @@ body {
 }
 .featured {
   background: #cfcfcf;
-  height: 160px; /* make same height as blog posts */
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
