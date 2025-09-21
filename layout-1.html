@@ -5,11 +5,10 @@
     <title>Layout 1</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <!-- add a page-scoping class so these styles don't affect the other layouts -->
   <body class="layout1">
     <div class="page">
       <main class="container">
-        <!-- Header: logo left, single gray nav bar on the right -->
+        <!-- Header: logo left, nav bar right -->
         <header class="header header--l1">
           <div class="logo logo--l1">Company Logo</div>
           <nav class="nav nav--l1">
@@ -20,25 +19,20 @@
           </nav>
         </header>
 
-        <!-- Featured product image (full width) -->
+        <!-- Featured product image (full width with label inside box) -->
         <section class="layout1-featured">
-          <div class="featured-label">Featured Product Image</div>
-          <div class="featured-box featured-box--l1"></div>
+          <div class="featured-box featured-box--l1">
+            Featured Product Image
+          </div>
         </section>
 
-        <!-- Two product cards side-by-side -->
+        <!-- Two product cards side-by-side with label inside -->
         <section class="layout1-products layout1-products--l1">
-          <div class="product product-1">
-            <div class="product-label">Product 1</div>
-            <div class="product-box product-box--l1"></div>
-          </div>
-          <div class="product product-2">
-            <div class="product-label">Product 2</div>
-            <div class="product-box product-box--l1"></div>
-          </div>
+          <div class="product-box product-box--l1">Product 1</div>
+          <div class="product-box product-box--l1">Product 2</div>
         </section>
 
-        <!-- Footer copyright bar -->
+        <!-- Footer -->
         <footer class="footer footer--l1">Copyright Notice</footer>
       </main>
     </div>
