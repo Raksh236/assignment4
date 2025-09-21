@@ -243,7 +243,7 @@ body {
   }
 }
 
-/* ===== Layout 1 (text inside boxes, top-left) ===== */
+/* ===== Layout 1 (professor match, top-left labels) ===== */
 .layout1 .page {
   padding: 40px 0;
 }
@@ -252,51 +252,56 @@ body {
   margin: 0 auto;
 }
 
-/* Header */
+/* Header: logo left, nav bar right */
 .header--l1 {
   display: grid;
-  grid-template-columns: 240px 1fr;
-  align-items: center;
+  grid-template-columns: 240px 1fr; /* fixed logo column + flexible nav */
+  align-items: start; /* top-align so bars line up at the top */
   gap: 22px;
   margin-bottom: 18px;
 }
+
+/* Company logo box with text at TOP-LEFT (not centered) */
 .logo--l1 {
   width: 240px;
   height: 72px;
   background: #cfcfcf;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
+  display: block; /* cancel any flex centering from global .logo */
+  padding: 8px 10px; /* puts text in the top-left corner */
   font-size: 13px;
   color: #000;
 }
-/* single gray nav bar */
+
+/* Single NAV BAR on the right with inline items (no individual gray pills) */
 .nav--l1 {
   height: 48px;
   background: #cfcfcf;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; /* spreads Item 1–4 across the bar */
   padding: 0 18px;
   font-size: 14px;
   font-weight: 500;
 }
+.nav--l1 .item,
 .nav--l1 span {
   background: none;
   padding: 0;
 }
 
-/* Boxes with label inside (top-left) */
-.featured-box--l1 {
-  background: #cfcfcf;
-  height: 420px;
-  position: relative;
-}
+/* Featured/product boxes with label inside at TOP-LEFT */
+.featured-box--l1,
 .product-box--l1 {
   background: #cfcfcf;
-  height: 180px;
   position: relative;
 }
+.featured-box--l1 {
+  height: 420px;
+}
+.product-box--l1 {
+  height: 180px;
+}
+
 .box-label-inside {
   position: absolute;
   top: 8px;
@@ -306,7 +311,7 @@ body {
   color: #000;
 }
 
-/* Products grid */
+/* Two products side-by-side */
 .layout1-products--l1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -314,7 +319,7 @@ body {
   margin-top: 18px;
 }
 
-/* Footer */
+/* Footer bar */
 .footer--l1 {
   background: #dcdcdc;
   height: 40px;
@@ -323,4 +328,10 @@ body {
   justify-content: center;
   font-size: 12px;
   margin-top: 22px;
+}
+
+/* Safety: neutralize any older nav “pill” styling */
+.nav .item {
+  background: none;
+  padding: 0;
 }
