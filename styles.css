@@ -242,3 +242,67 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ===== Layout 1 exact-match tweaks (scoped) ===== */
+.layout1 .page {        /* remove side padding for this page */
+  padding: 40px 0;
+}
+.layout1 .container {   /* strict 960px canvas centered */
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Header: logo left, single gray bar for nav on right */
+.header--l1 {
+  grid-template-columns: 240px 1fr; /* fixed logo column like screenshot */
+  column-gap: 28px;
+  margin-bottom: 22px;
+}
+.logo--l1 {
+  width: 240px;
+  height: 72px;        /* taller like the screenshot */
+  background: #cfcfcf;
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 10px;
+  font-size: 13px;
+  color: #333;
+}
+.nav--l1 {
+  height: 48px;               /* single bar */
+  background: #cfcfcf;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around; /* text spaced inside */
+  align-items: center;
+  padding: 0 18px;
+  gap: 0;
+}
+.nav--l1 .item,
+.nav--l1 span {
+  background: none;           /* no individual pills */
+  padding: 0;
+  font-size: 14px;
+  color: #222;
+}
+
+/* Featured image: much taller */
+.featured-box--l1 {
+  height: 420px;
+}
+
+/* Products: taller boxes, same gap as screenshot */
+.layout1-products--l1 {
+  gap: 22px;
+  margin-top: 18px;
+}
+.product-box--l1 {
+  height: 180px;
+}
+
+/* Footer bar: full width and a touch taller */
+.footer--l1 {
+  height: 40px;
+  margin-top: 22px;
+}
