@@ -243,7 +243,7 @@ body {
   }
 }
 
-/* ===== Layout 1 (professor-match) ===== */
+/* ===== Layout 1 (text inside boxes, top-left) ===== */
 .layout1 .page {
   padding: 40px 0;
 }
@@ -270,7 +270,7 @@ body {
   font-size: 13px;
   color: #000;
 }
-/* Single gray nav bar with inline items */
+/* single gray nav bar */
 .nav--l1 {
   height: 48px;
   background: #cfcfcf;
@@ -278,38 +278,40 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 0 18px;
-  gap: 0;
   font-size: 14px;
   font-weight: 500;
 }
-/* neutralize any pill styling from global rules */
-.nav--l1 .item,
 .nav--l1 span {
   background: none;
   padding: 0;
 }
 
-/* Labels ABOVE boxes */
-.box-label {
-  font-size: 12px;
-  color: #222;
-  margin: 6px 0 8px 0;
-}
-
-/* Featured/product boxes */
+/* Boxes with label inside (top-left) */
 .featured-box--l1 {
   background: #cfcfcf;
-  height: 420px; /* tall like the screenshot */
+  height: 420px;
+  position: relative;
 }
+.product-box--l1 {
+  background: #cfcfcf;
+  height: 180px;
+  position: relative;
+}
+.box-label-inside {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Products grid */
 .layout1-products--l1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 22px;
   margin-top: 18px;
-}
-.product-box--l1 {
-  background: #cfcfcf;
-  height: 180px;
 }
 
 /* Footer */
