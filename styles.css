@@ -255,36 +255,40 @@ body {
 /* Header: logo left, nav bar right */
 
 /* Header: logo left, nav bar right */
+/* Header grid stays top-aligned */
 .header--l1 {
   display: grid;
-  grid-template-columns: 240px auto;
-  align-items: start; /* everything inside aligns to the TOP */
+  grid-template-columns: 240px 1fr;
+  align-items: start; /* keep at top */
   gap: 22px;
   margin-bottom: 18px;
 }
 
-/* Logo */
+/* Logo text in top-left of its gray box */
 .logo--l1 {
   width: 240px;
   height: 72px;
   background: #cfcfcf;
-  padding: 8px 10px; /* text top-left inside */
+  padding: 8px 10px;
   font-size: 13px;
   color: #000;
 }
 
-/* NAV BAR (small, top-left aligned) */
+/* >>> Make the nav a smaller bar, anchored to the RIGHT <<< */
 .nav--l1 {
+  height: 36px; /* compact bar like professor's */
   background: #cfcfcf;
-  height: 36px; /* smaller bar */
-  margin-top: 0; /* ensure no extra gap pushes it down */
   display: flex;
-  align-items: center; /* center items vertically in the bar */
-  justify-content: space-around;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0 12px;
+  align-items: center;
+  justify-content: space-between; /* even spacing inside */
+  padding: 0 20px;
+
+  width: 620px; /* <-- size the bar (adjust if needed) */
+  justify-self: end; /* <-- push the whole bar to the right */
+  margin-top: 0; /* ensure it hugs the top */
 }
+
+/* nav items are plain text inside the single bar */
 .nav--l1 span {
   background: none;
   padding: 0;
