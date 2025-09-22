@@ -300,10 +300,10 @@ body {
   font-size: 13px;
 }
 
-/* Hero: taller gray block with centered text */
+/* Hero: roomy, centered text */
 .hero--l3 .hero-box {
   background: #cfcfcf;
-  padding: 60px 40px; /* taller like professor */
+  padding: 60px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,7 +323,7 @@ body {
   color: #222;
 }
 
-/* Main grid */
+/* Two-column content area: left = blog posts, right = featured grid */
 .layout3-main {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -341,20 +341,26 @@ body {
   font-weight: 600;
   margin-bottom: 14px;
 }
-/* If you ever want the right Title to match one product column exactly:
-   .right-col .title--bar { width: calc(50% - 9px); } */
+/* Left title is small (not full width) */
+.left-col .title--bar {
+  width: 140px;
+}
+/* Right title matches width of one featured-card column */
+.right-col .title--bar {
+  width: calc(50% - 9px);
+} /* 9px = half of 18px gap */
 
-/* Left column */
+/* Blog posts: taller cards; label at top-left INSIDE the box */
 .blog-post {
   background: #cfcfcf;
-  height: 160px; /* taller boxes */
+  height: 160px;
   margin-bottom: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  padding: 8px 10px; /* top-left text */
+  font-weight: 500; /* label weight like mock */
 }
 
-/* Right column */
+/* Featured products: shorter than blog posts; label top-left */
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -362,10 +368,10 @@ body {
 }
 .featured {
   background: #cfcfcf;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 120px; /* smaller than blog posts */
+  display: block;
+  padding: 8px 10px; /* top-left text */
+  font-weight: 500;
 }
 
 /* Footer */
