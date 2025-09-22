@@ -29,8 +29,8 @@ body {
 }
 
 /* ---------------------------
-   Default Header (used on index)
-   --------------------------- */
+     Default Header (used on index)
+     --------------------------- */
 .header {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -59,8 +59,8 @@ body {
 }
 
 /* ---------------------------
-   Default Footer
-   --------------------------- */
+     Default Footer
+     --------------------------- */
 .footer {
   background: #dcdcdc;
   height: 32px;
@@ -72,8 +72,8 @@ body {
 }
 
 /* ---------------------------
-   Index page (Assignment 4)
-   --------------------------- */
+     Index page (Assignment 4)
+     --------------------------- */
 .page-title {
   font-size: 22px;
   margin-bottom: 10px;
@@ -102,8 +102,8 @@ body {
 }
 
 /* ===========================
-   Layout 1 (professor match)
-   =========================== */
+     Layout 1 (professor match)
+     =========================== */
 .layout1 .page {
   padding: 40px 0;
 }
@@ -124,21 +124,21 @@ body {
   width: 240px;
   height: 72px;
   background: #cfcfcf;
-  display: block; /* text top-left inside box */
+  display: block;
   padding: 6px 10px;
   font-size: 13px;
   color: #000;
 }
 .nav--l1 {
-  height: 36px; /* compact bar */
+  height: 36px;
   background: #cfcfcf;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  width: 620px; /* adjust if professor’s bar is shorter/longer */
-  justify-self: end; /* push to right */
-  align-self: start; /* stick to top */
+  width: 620px;
+  justify-self: end;
+  align-self: start;
 }
 .nav--l1 span {
   background: none;
@@ -183,8 +183,8 @@ body {
 }
 
 /* ===========================
-   Layout 2 (professor match)
-   =========================== */
+     Layout 2 (professor match)
+     =========================== */
 .layout2 .container {
   width: 960px;
   margin: 0 auto;
@@ -259,8 +259,8 @@ body {
 }
 
 /* ===========================
-   Layout 3 (professor match)
-   =========================== */
+     Layout 3 (professor match)
+     =========================== */
 .layout3 .container {
   width: 960px;
   margin: 0 auto;
@@ -276,7 +276,7 @@ body {
 }
 .logo--l3 {
   width: 240px;
-  height: 48px;
+  height: 56px; /* taller logo */
   background: #cfcfcf;
   display: block;
   padding: 6px 10px;
@@ -300,10 +300,10 @@ body {
   font-size: 13px;
 }
 
-/* Hero: roomy, centered text */
+/* Hero: taller gray block with centered text */
 .hero--l3 .hero-box {
   background: #cfcfcf;
-  padding: 60px 40px;
+  padding: 80px 40px; /* taller hero */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,10 +323,10 @@ body {
   color: #222;
 }
 
-/* Two-column content area: left = blog posts, right = featured grid */
+/* Two-column content area */
 .layout3-main {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.25fr 1.75fr; /* blog column a bit wider */
   gap: 22px;
   margin-bottom: 28px;
 }
@@ -341,26 +341,26 @@ body {
   font-weight: 600;
   margin-bottom: 14px;
 }
-/* Left title is small (not full width) */
+/* Left title is a short bar */
 .left-col .title--bar {
   width: 140px;
 }
-/* Right title matches width of one featured-card column */
+/* Right title matches one featured column */
 .right-col .title--bar {
   width: calc(50% - 9px);
 } /* 9px = half of 18px gap */
 
-/* Blog posts: taller cards; label at top-left INSIDE the box */
+/* Blog posts: text top-left INSIDE the box */
 .blog-post {
   background: #cfcfcf;
   height: 160px;
   margin-bottom: 18px;
   display: block;
-  padding: 8px 10px; /* top-left text */
-  font-weight: 500; /* label weight like mock */
+  padding: 8px 10px;
+  font-weight: 500;
 }
 
-/* Featured products: shorter than blog posts; label top-left */
+/* Featured products: SAME HEIGHT as blog posts; text top-left */
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -368,9 +368,9 @@ body {
 }
 .featured {
   background: #cfcfcf;
-  height: 120px; /* smaller than blog posts */
+  height: 160px;
   display: block;
-  padding: 8px 10px; /* top-left text */
+  padding: 8px 10px;
   font-weight: 500;
 }
 
@@ -386,8 +386,8 @@ body {
 }
 
 /* ---------------------------
-   Responsive tweaks
-   --------------------------- */
+     Responsive tweaks
+     --------------------------- */
 @media (max-width: 1000px) {
   .container {
     padding: 0 12px;
